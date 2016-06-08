@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <title>Title</title>
+    <style>
+        body {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <button class="btn btn-primary btn-lg" title="hola amigos"
+        data-toggle="tooltip" data-placement="bottom">Presionar</button>
+    </div>
+
+    <div class="row">
+        <button class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="bottom"
+                data-trigger="hover" data-content="Me muestro en un popover" title="titulo mensaje">Soy un boton popover</button>
+    </div>
+    <input type="text" class="input-sm" data-toggle="popover" data-container="body" data-placement="bottom"
+    data-trigger="hover" data-content="me muestro en el contenido" title="soy un titulo">
+</div>
+
+
+
+
+<script src="js/jquery-2.2.3.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script>
+    $(function () {
+
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    });
+</script>
+
+
+</body>
+</html>
+
+
